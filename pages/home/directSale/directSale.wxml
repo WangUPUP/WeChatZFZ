@@ -1,0 +1,7 @@
+<!--pages/home/directSale/directSale.wxml-->
+<!-- 顶部button标签 -->
+<view class="btns-top">
+<view class="btns-item" wx:for="{{btns}}" wx:key="index">
+  
+</view>
+</view>

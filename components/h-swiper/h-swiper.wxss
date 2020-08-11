@@ -1,0 +1,13 @@
+/* components/h-swiper/h-swiper.wxss */
+.swiper {
+  width: 100vw;
+  height: 30vh;
+}
+
+.swiper-item {
+  width: 100vw;
+}
+
+.swiper-item image {
+  height: 100%;
+}

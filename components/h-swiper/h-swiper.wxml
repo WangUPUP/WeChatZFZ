@@ -1,0 +1,9 @@
+<!-- 轮播图组件 -->
+<swiper autoplay  circular class="swiper">
+  <block>
+    <swiper-item wx:for="{{swiperImg}}" wx:key = "index" class="swiper-item">
+      <image src="{{item.img}}" mode="aspectFill"  style="width : 100vw"></image>
+    </swiper-item>
+  </block>
+</swiper>
+

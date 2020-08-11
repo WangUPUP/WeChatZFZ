@@ -1,0 +1,56 @@
+/* pages/home/home.wxss */
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+/* 录播图搜索区域 */
+.swiper-input {
+  position: absolute;
+  top: calc(25vh - 0rpx);
+  left: 43rpx ; 
+  background: #fffdfd;
+  box-shadow: 0 0 8px #adaba9;
+  border-radius: 40rpx;
+}
+
+.input-item{
+    height: 2.6rem;
+    width: 590rpx;
+    box-shadow: 0 0 4px whitesmoke;
+    border-radius: 20px;
+    color:rgb(132, 139, 136);
+    margin-left: 35px;
+    font-size: 14px;
+} 
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 8.5px;
+}
+
+/* 主页菜单区 */
+.bow {
+  width : auto;
+  margin : 0 10px;
+  margin-top: 80rpx;
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+
+.bow-item {
+  text-align: center;
+  width: 160rpx;
+  height: 170rpx;
+  margin-bottom: 15px;
+}
+
+.bow-img {
+  width: 110rpx;
+  height: 110rpx;
+}

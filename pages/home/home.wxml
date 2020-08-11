@@ -1,0 +1,19 @@
+<!-- 轮播图 -->
+<h-swiper swiperImg="{{swiperImg}}"/> 
+
+<!-- 输入框 -->
+<view class="swiper-input">
+  <icon type="search" class="search-icon" size="50rpx"></icon>
+  <input placeholder="你想住哪里" type="text" maxlength="100" class="input-item"></input>
+</view>
+
+<!-- 菜单区域 -->
+<view class="bow">
+	<block wx:for="{{mainMenuList}}" wx:key="index">
+	<view hover-class="none" hover-stop-propagation="false" class="bow-item" bindtap="gotoPath" data-index="{{index}}">
+		<image src="{{item.img}}" class="bow-img"></image>
+		<view>{{item.title}}</view>
+	</view>
+
+	</block>
+</view>
