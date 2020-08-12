@@ -40,7 +40,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "找房上这里",
+    "navigationBarTitleText": "小程序Demo",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

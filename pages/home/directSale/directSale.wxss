@@ -1,1 +1,90 @@
 /* pages/home/directSale/directSale.wxss */
+.btns-top {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.btns-item {
+	display: flex;
+}
+
+.btn-top {
+	border-radius:0 ;
+	font-weight: 400;
+	font-size: 15px;
+	height: 35px;
+	width: 45vw !important;
+}
+
+.selected {
+	background-color: #3fbaa6 ;
+	color: #fdf7f7 ;
+}
+.unselected {
+	background: #fdf7f7 !important;
+    color: #3fbaa6 !important;
+    border:1px solid #3fbaa6 !important;
+}
+
+.search {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.input {
+	display: flex;
+}
+
+.input-item {
+	height: 40px;
+	width: 80vw;
+	border-radius: 20px;
+	padding-left: 35px;
+	background: #f7f5f4;
+	box-shadow: 0 0 4px whitesmoke;
+	color:#2a2c2b;
+	font-size: 14px;
+	/* 文字间隔 */
+	letter-spacing: 1px;
+}
+
+.search-icon {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 10px;
+	top: calc( 20px - 15px);
+}
+
+.poster {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.select {
+	margin : 0 20px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	border: 1px solid #3fbaa6;
+}
+
+.select-item {
+	display: flex;
+	justify-content: center;
+}
+
+.select-img {
+	margin-left:5px;
+	width: 3vw;
+	height: 3vh;
+}

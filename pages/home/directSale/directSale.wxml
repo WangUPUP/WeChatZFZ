@@ -1,7 +1,36 @@
 <!--pages/home/directSale/directSale.wxml-->
 <!-- 顶部button标签 -->
 <view class="btns-top">
-<view class="btns-item" wx:for="{{btns}}" wx:key="index">
-  
+	<view class="btns-item" wx:for="{{btns}}" wx:key="index">
+		<button class="btn-top {{currentIndex == index ? 'selected' : 'unselected'}}" data-index="{{index}}" bindtap="onSelected">
+		{{item.title}}</button>
+	</view>
 </view>
+
+<!-- 搜索文本框 -->
+<view class="search">
+	<view class="input">
+		<icon type="search" class="search-icon" size="25px"></icon>
+		<input placeholder="请输入详细区域" type="text" class="input-item"></input>
+	</view>
+</view>
+
+<!-- 活动区域 -->
+<view>
+	<view class="poster">
+		<image src="/assets/home/swiper1.jpg" style="width : 90%; height : 115px" mode="widthFix" lazy-load="false" data-index="{{currentIndex}}"></image>
+	</view>
+</view>
+
+<!-- 筛选区域 -->
+<view class="select" hover-class="none" hover-stop-propagation="false">
+	<block classs="select-box" wx:for="{{selectList}}" wx:key="index">
+		<view class="select-item">
+			<view>{{item.title}}</view>
+			<image src="{{item.img}}" class="select-img"></image>
+		</view>
+	</block>
+	<view class="content">
+		<block class="option" wx:for="{{regionList}}"></block>
+	</view>
 </view>

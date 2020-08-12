@@ -5,17 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 按钮组合
     btns : [
       {
         id : 1,
-        titile : '房主直卖'
+        title : '区域一'
       },{
         id : 2,
-        titile : '优选房源'
+        title : '区域二'
       }
-    ]
+    ],
+    // 被选中按钮索引
+    currentIndex : 0,
+    // 删选选项
+    selectList : [
+      {
+        id : 1,
+        img : '/assets/svg/Bottom.svg',
+        title : '全部'
+      },
+      {
+        id : 2,
+        img : '/assets/svg/Bottom.svg',
+        title : '能源'
+      },
+      {
+        id : 3,
+        img : '/assets/svg/Bottom.svg',
+        title : '场所'
+      },
+      {
+        id : 4,
+        img : '/assets/svg/Bottom.svg',
+        title : '更多'
+      },
+      
+
+      
+    ],
+    // 地区选项
+    regionList :[]
+  },
+  onSelected(e){
+    let num = e.currentTarget.dataset.index
+    // 更新数据源
+    this.setData({
+      currentIndex : num
+    })
   },
 
+    
   /**
    * 生命周期函数--监听页面加载
    */
