@@ -1,0 +1,73 @@
+<!--pages/demo/demo.wxml-->
+<button bindtap="handle" type="warn">按钮</button>
+<input bindinput="handleInput" value="请输入"></input>
+<input bindinput="inputValue" value="{{msg}}"></input>
+<button bindtap="btnHandle" data-info="info">按钮2</button>
+
+<view>--------------------------------------------</view>
+<view id="father" bindtap="event">father
+	<view id="child"> child</view>
+</view>
+
+<view>--------------------- 内嵌 wsx ---------------------</view>
+<view>{{info.msg}}</view>
+<wxs module="info">
+	var msg = '测试 module'
+	module.exports = {
+		msg : msg
+	}
+</wxs>
+<view>---------------------.wxs 之间引用  ----------------------</view>
+<wxs src="./tools.wxs" module="tools" />
+<view>{{tools.msg}}</view>
+<view>{{tools.bar(tools.FOO)}}</view>
+<!-- <wxs src="./logic.wxs" module="logic" /> -->
+
+<view>---------------------- 外联 .wxs---------------------</view>
+<wxs src='./test.wxs' module="test"/>
+<view> {{ test.msg }} </view>
+<view> {{ test.handle('开始')}} </view>
+
+<view>---------------------- 条件渲染 ---------------------</view>
+<view> wx:if </view>
+<view wx:if="{{id < 10}}">id小于10</view>
+<view wx:elif="{{id === 10 }}">id等于10</view>
+<view wx:else="{{id > 10}}">id大于10</view>
+
+<view> block wx:if </view>
+<block wx:if="{{id > 10}}">
+	<view>HTML</view>
+	<view>CSS</view>
+	<view>JavaScript</view>
+</block>
+
+<view> hidden </view>
+<view hidden="{{ id < 10}}"> 前端三板斧 </view>
+
+<view>---------------------- 列表渲染 ---------------------</view>
+<block wx:for="{{ arr }}" wx:key="index">
+	<view>
+	值 : {{ item }} --- 索引 {{index}}
+	</view>
+</block>
+<view>---------------- 指定索引和当前项的变量名  ----------------</view>
+<block wx:for="{{ arr }}" wx:for-item="forItem" wx:for-index="forIndex" wx:key="index">
+	<view>
+	值 : {{ forItem }} --- 索引 {{forIndex}}
+	</view>
+</block>
+
+<view>---------------- 导航到非 tabBar 页面  ----------------</view>
+<navigator url="/pages/home/directSale/directSale">跳转到 directSale 页面</navigator>
+<view>---------------- 导航到 tabBar 页面  ----------------</view>
+<navigator url="/pages/home/home" open-type="switchTab"> 跳转到 home 页面 </navigator>
+<view>---------------- 返回上一页  ----------------</view>
+<navigator open-type='navigateBack' delta='1'> 返回上一页 </navigator>
+<navigator open-type='navigateBack' delta='2'> 返回上上一页 </navigator>
+<view>---------------- 编程式导航 ----------------</view>
+<button bindtap="tpNoTabbar"> 导航到非 tabbar 页面 </button>
+<button bindtap="toTabbar">导航到 tabbar 页面</button>
+<button bindtap="goBack"> 返回上一页 </button>
+<navigator url="/pages/home/directSale/directSale?username=lisi&paw=123">带参跳转到 非 tabbar 页面</navigator>
+<button bindtap="takeParaTo"> 带参跳转tabbar</button>
+<button bindtap="sendRequire">请求</button>

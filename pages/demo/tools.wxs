@@ -1,0 +1,12 @@
+var foo = "'hello word' from wxs" // 定义私有变量 foo
+var bar = function(d) {					// 定义私有函数 bar
+	return d
+}
+// 通过 modules.exports 向外共享私有成员
+module.exports = {
+	FOO : foo, // 向外共享私有变量 foo
+	bar : bar // 向外共享私有函数 bar
+}
+
+// module.exports 中挂载msg 变量
+module.exports.msg = " some msg"

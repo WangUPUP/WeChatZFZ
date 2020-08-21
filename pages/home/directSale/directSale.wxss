@@ -1,4 +1,5 @@
 /* pages/home/directSale/directSale.wxss */
+/* 顶部按钮区域 */
 .btns-top {
 	width: 90%;
 	margin: auto;
@@ -29,6 +30,7 @@
     border:1px solid #3fbaa6 !important;
 }
 
+/* 搜索框区域 */
 .search {
 	margin: auto;
 	display: flex;
@@ -62,6 +64,7 @@
 	top: calc( 20px - 15px);
 }
 
+/* 宣传轮播图区域 */
 .poster {
 	display: flex;
 	justify-content: center;
@@ -69,22 +72,95 @@
 	margin-bottom: 10px;
 }
 
+/* 条件筛选区域 */
 .select {
 	margin : 0 20px;
 	margin-bottom: 10px;
 	display: flex;
-	justify-content: space-between;
 	font-size: 14px;
-	border: 1px solid #3fbaa6;
 }
 
+
 .select-item {
-	display: flex;
-	justify-content: center;
+	position: relative;
+	padding-right: 20px;
+	text-align: center;
+	align-items: center;
+	flex: 1;
 }
 
 .select-img {
-	margin-left:5px;
-	width: 3vw;
-	height: 3vh;
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	right: 47rpx;
+	top: 8px;
 }
+
+/* 筛选选项区域 */
+.content {
+	width: 100%;
+	height: 250px;
+	overflow: scroll;
+	padding-bottom:20px;
+	position: absolute;
+	background: #ffffff;
+	top: 28px;
+	z-index: 100;
+}
+
+.btn-confirm {
+	margin-top:10px; 
+  border-radius:20px; 
+  padding: 5px 30px;
+  color: #ffffff;
+  font-size:14px; 
+  background: #3fbaa6;
+  float: right;
+  margin-right:20px; 
+}
+
+.option {
+	margin-top:20px;
+	margin-bottom:10px;  
+	margin-left:20px; 
+	font-size:12px; 
+}
+
+/* 被选中选项的样式 */
+.currentNav {
+	color: #3fbaa6;
+}
+
+/* 控制选项样式的显示和隐藏 */
+.show {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+
+.all {
+	position: relative;
+	height: 1000px;
+}
+ec-canvas {
+	width: 100%;
+	height: 100%;
+	}
+	.container {
+	/* position: absolute; */
+	z-index: 1000;
+	top: 30px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	}
+	

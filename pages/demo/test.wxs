@@ -1,0 +1,9 @@
+var msg = '测试外联 .wxs 文件'
+var handle = function(params){
+	return params
+}
+
+module.exports = {
+	msg : msg,
+	handle : handle
+}

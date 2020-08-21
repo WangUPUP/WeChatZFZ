@@ -7,32 +7,32 @@ Page({
   data: {
     // 轮播图数据
     swiperImg: [{
-        img: '../../assets/swiper/01.png'
+        img: '../../assets/swiper/swiper1.jpg'
       },
       {
-        img: '../../assets/swiper/01.png'
+        img: '../../assets/swiper/swiper1.jpg'
       }
     ],
     // 菜单栏数据
     mainMenuList: [{
         img: '../../assets/home/homeIcon/04.png',
-        title: '房东直卖'
+        title: '选项一'
       },
       {
         img: '../../assets/home/homeIcon/03.png',
-        title: '优选房源'
+        title: '选项一'
       },
       {
         img: '../../assets/home/homeIcon/02.png',
-        title: '服务网点'
+        title: '选项一'
       },
       {
         img: '../../assets/home/homeIcon/01.png',
-        title: '关于我们'
+        title: '选项一'
       },
       {
         img: '../../assets/home/homeIcon/05.png',
-        title: '新房'
+        title: '选项一'
       },
       {
         img: '../../assets/home/homeIcon/03.png',
@@ -57,10 +57,14 @@ Page({
     }
   },
 
+
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {},
+  onLoad: function (options) {
+    console.log(options);
+    
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

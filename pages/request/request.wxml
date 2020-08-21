@@ -1,0 +1,8 @@
+<!--pages/request/request.wxml-->
+<button bindtap="getSwiper">获取轮播图</button>
+<button bindtap="getCatitems">获取导航菜单</button>
+<button bindtap="getFloor">获取楼层信息</button>
+<button bindtap="getOrders">获取分类</button>
+<button bindtap="getGoods">获取列表</button>
+<button bindtap="getGoodsDetail">获取详情</button>
+<button bindtap="query">条件查询</button>

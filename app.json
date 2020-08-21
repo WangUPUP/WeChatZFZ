@@ -1,48 +1,50 @@
 {
-  "pages": [
-	  "pages/home/directSale/directSale",
-    "pages/home/home",
-    "pages/home/housingResources/housingResources",
-    "pages/home/outlets/outlets",
-    "pages/home/aboutUs/aboutUS",
-    "pages/home/newHouse/newHouse",
-    "components/h-swiper/h-swiper",
-    "pages/logs/logs",
-    "pages/publish/publish",
-    "pages/my/my"
-  ],
-  "tabBar": {
-    "color": "#aaafb8",
-    "selectedColor": "#27bbb2",
-    "backgroundColor": "#ffffff",
-    "position": "bottom",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "/assets/tabbar/home_new.png",
-        "selectedIconPath": "/assets/tabbar/home_new_.png"
-      },
-      {
-        "pagePath": "pages/publish/publish",
-        "text": "发布",
-        "iconPath": "/assets/tabbar/mine_new.png",
-        "selectedIconPath": "/assets/tabbar/mine_new_.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "/assets/tabbar/news_new.png",
-        "selectedIconPath": "/assets/tabbar/news_new_.png"
-      }
-    ]
-  },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小程序Demo",
-    "navigationBarTextStyle": "black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+	"pages": [
+		"pages/home/directSale/directSale",
+		"pages/request/request",
+		"pages/demo/demo",
+		"pages/home/home",
+		"pages/home/housingResources/housingResources",
+		"pages/home/outlets/outlets",
+		"pages/home/aboutUs/aboutUS",
+		"pages/home/newHouse/newHouse",
+		"components/h-swiper/h-swiper",
+		"pages/logs/logs",
+		"pages/publish/publish",
+		"pages/my/my"
+	],
+	"tabBar": {
+		"color": "#aaafb8",
+		"selectedColor": "#27bbb2",
+		"backgroundColor": "#ffffff",
+		"position": "bottom",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "/assets/tabbar/home_new.png",
+				"selectedIconPath": "/assets/tabbar/home_new_.png"
+			},
+			{
+				"pagePath": "pages/publish/publish",
+				"text": "发布",
+				"iconPath": "/assets/tabbar/mine_new.png",
+				"selectedIconPath": "/assets/tabbar/mine_new_.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "/assets/tabbar/news_new.png",
+				"selectedIconPath": "/assets/tabbar/news_new_.png"
+			}
+		]
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "小程序Demo",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
 }
